@@ -35,21 +35,14 @@ export default function Home() {
           <p className="text-neutral-400 text-sm">FEATURED PROJECTS</p>
         </div>
         <div className="text-neutral-200 bg-neutral-900 px-3.5 py-3 mt-2 rounded-t-2xl rounded-b-lg">
-          <Lens
-            zoomFactor={1.5}
-            lensSize={155}
-            isStatic={false}
-            ariaLabel="Zoom Area"
-          >
-            <Image
-              className="rounded-xl"
-              src="/assets/kuromainmenu.png"
-              alt="Kuro Client Main Menu"
-              width={620}
-              height={1}
-              quality={100}
-            ></Image>
-          </Lens>
+          <Image
+            className="rounded-xl"
+            src="/assets/kuromainmenu.png"
+            alt="Kuro Client Main Menu"
+            width={620}
+            height={1}
+            quality={100}
+          ></Image>
           <div className="flex items-center justify-between">
             <h1 className="font-medium mt-2">Kuro Client</h1>
             <Link
@@ -90,21 +83,14 @@ export default function Home() {
         </div>
 
         <div className="text-neutral-200 bg-neutral-900 px-3.5 py-3 mt-1 rounded-t-lg rounded-b-2xl">
-          <Lens
-            zoomFactor={1.5}
-            lensSize={155}
-            isStatic={false}
-            ariaLabel="Zoom Area"
-          >
-            <Image
-              className="rounded-xl"
-              src="/assets/bedwarsupgradesdisplay.png"
-              alt="Kuro Client Main Menu"
-              width={620}
-              height={1}
-              quality={100}
-            ></Image>
-          </Lens>
+          <Image
+            className="rounded-xl"
+            src="/assets/bedwarsupgradesdisplay.png"
+            alt="Kuro Client Main Menu"
+            width={620}
+            height={1}
+            quality={100}
+          ></Image>
           <div className="flex items-center justify-between">
             <h1 className="font-medium mt-2">Bedwars Upgrades Display</h1>
             <Link
