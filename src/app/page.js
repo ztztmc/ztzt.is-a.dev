@@ -5,8 +5,6 @@ import Image from "next/image";
 
 import Header from "./components/Header";
 
-import Lens from "./components/magicui/lens";
-
 import { ArrowUpRight } from "lucide-react";
 
 import { Noto_Sans_Mono } from "next/font/google";
