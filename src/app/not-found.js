@@ -4,9 +4,7 @@ import { useRouter } from "next/navigation";
 
 import Header from "./components/Header";
 
-import AnimatedContent from "./components/reactbits/AnimatedContent";
-
-const notfound = () => {
+const NotFound = () => {
   const router = useRouter();
   return (
     <div>
@@ -31,4 +29,4 @@ const notfound = () => {
     </div>
   );
 };
-export default notfound;
+export default NotFound;

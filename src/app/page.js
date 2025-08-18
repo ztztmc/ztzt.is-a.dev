@@ -23,10 +23,10 @@ export default function Home() {
           <p className="text-neutral-400 text-sm">ABOUT ME</p>
         </div>
         <p className="text-neutral-200 mt-2 mb-6">
-          Hi, I'm ztzt. I am a self-taught developer currently in high school. I
-          love programming, playing Minecraft and watching anime. This is my
-          personal website to showcase my projects and skills. I hope you enjoy
-          your visit!
+          Hi, I&apos;m ztzt. I am a self-taught developer currently in high
+          school. I love programming, playing Minecraft and watching anime. This
+          is my personal website to showcase my projects and skills. I hope you
+          enjoy your visit!
         </p>
 
         <div className={notoSansMono.className}>
