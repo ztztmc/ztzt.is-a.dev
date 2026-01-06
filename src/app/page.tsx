@@ -132,7 +132,6 @@ export default function Home() {
               alt="discord icon"
               width={22}
               height={1}
-              quality={100}
             ></Image>
             <div className={notoSansMono.className}>
               <p className="text-neutral-200 mt-2">discord</p>
@@ -150,7 +149,6 @@ export default function Home() {
               alt="github icon"
               width={21}
               height={1}
-              quality={100}
             ></Image>
             <div className={notoSansMono.className}>
               <p className="text-neutral-200 mt-2">github</p>
