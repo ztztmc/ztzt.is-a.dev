@@ -1,168 +1,144 @@
-"use client";
-
-import Link from "next/link";
+import { ExternalLink } from "lucide-react";
 import Image from "next/image";
-
-import Header from "./components/Header";
-
-import { ArrowUpRight } from "lucide-react";
-
-import { Noto_Sans_Mono } from "next/font/google";
-
-const notoSansMono = Noto_Sans_Mono({
-  subsets: ["latin"],
-});
+import Cursor from "./components/Cursor";
 
 export default function Home() {
   return (
-    <main className="p-2">
-      <div className="px-4 mx-auto max-w-2xl">
-        <Header />
-
-        <div className={notoSansMono.className}>
-          <p className="text-neutral-400 text-sm">ABOUT ME</p>
+    <main className="mx-auto max-w-[690px] py-10 px-4 text-lg">
+      <header className="flex flex-row items-center justify-between mb-8">
+        <div className="flex gap-2 font-medium items-center">
+          <Image
+            src="/pfp.png"
+            alt="Profile picture"
+            width={35}
+            height={35}
+            className="rounded-full"
+          />
+          <p>ztzt</p>
+          <p className="font-bold text-[#999999]">•</p>
+          <p className="text-[#999999]">web dev</p>
         </div>
-        <p className="text-neutral-200 mt-2 mb-6">
-          Hi, I&apos;m ztzt. I am a self-taught developer currently in high
-          school. I love programming, playing Minecraft and watching anime. This
-          is my personal website to showcase my projects and skills. I hope you
-          enjoy your visit!
+        <a
+          href="https://github.com/ztztmc"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="flex gap-2 relative after:bg-[#ccc6c2] after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+            Github
+            <ExternalLink width={18} />
+          </div>
+        </a>
+      </header>
+      <section className="flex flex-col justify-between bg-neutral-900 h-40 rounded-3xl px-6 py-4 mb-8">
+        <p>
+          17 <span className="text-[#999999]">yo</span>
         </p>
+        <p className="text-[#999999]">
+          Hello! I'm ztzt, a{" "}
+          <span className="text-[#ccc6c2]">front-end web developer</span>{" "}
+          creating cool stuff. I mainly work with{" "}
+          <span className="text-[#ccc6c2]">Next.js</span> and{" "}
+          <span className="text-[#ccc6c2]">Tailwind</span> but I'm always eager
+          to learn new technologies.
+        </p>
+      </section>
 
-        <div className={notoSansMono.className}>
-          <p className="text-neutral-400 text-sm">FEATURED PROJECTS</p>
-        </div>
-        <div className="text-neutral-200 bg-neutral-900 px-3.5 py-3 mt-2 rounded-t-2xl rounded-b-lg">
-          <Image
-            className="rounded-xl"
-            src="/assets/kuromainmenu.png"
-            alt="Kuro Client Main Menu"
-            width={620}
-            height={1}
-            quality={100}
-          ></Image>
-          <div className="flex items-center justify-between">
-            <h1 className="font-medium mt-2">Kuro Client</h1>
-            <Link
-              target="_blank"
-              href={"https://github.com/ztztmc/kuro-client"}
-              className="cursor-pointer text-[15px] bg-neutral-800 px-2 rounded-full transition-colors hover:bg-neutral-700 ml-2 mt-2"
-            >
-              Github
-              <ArrowUpRight className="inline ml-1 mb-0.5 -mr-1" size={16} />
-            </Link>
-          </div>
-          <p className="text-neutral-400 text-sm -mt-0.5">
-            Free, minimal and open-source modpack for Minecraft 1.8.9
+      <section
+        className="cursor-none bg-neutral-900 rounded-3xl px-6 mb-8"
+        data-cursor-link="remp3.vercel.app"
+        data-cursor-url="https://remp3.vercel.app"
+      >
+        <div className="flex justify-between pt-4 pb-2">
+          <p className="font-medium w-100">remp3</p>
+          <p className="text-[#999999] text-[15px] leading-5 w-260">
+            Web-based local music player. Add audio files, play them, create
+            playlists and manage your music. No files are uploaded to any
+            server, everything stays on your device.
           </p>
-          <div className="flex mt-1">
-            <Link
-              target="_blank"
-              href={"https://java.com/"}
-              className="cursor-pointer text-[15px] bg-neutral-800 px-2 rounded-full transition-colors hover:bg-neutral-700"
-            >
-              Java
-            </Link>
-            <Link
-              target="_blank"
-              href={"https://legacyfabric.net/"}
-              className="cursor-pointer text-[15px] bg-neutral-800 px-2 rounded-full transition-colors hover:bg-neutral-700 ml-1.5"
-            >
-              Legacy Fabric
-            </Link>
-            <Link
-              target="_blank"
-              href={"https://github.com/SpongePowered/Mixin"}
-              className="cursor-pointer text-[15px] bg-neutral-800 px-2 rounded-full transition-colors hover:bg-neutral-700 ml-1.5"
-            >
-              Mixins
-            </Link>
-          </div>
         </div>
-
-        <div className="text-neutral-200 bg-neutral-900 px-3.5 py-3 mt-1 rounded-t-lg rounded-b-2xl">
-          <Image
-            className="rounded-xl"
-            src="/assets/bedwarsupgradesdisplay.png"
-            alt="Kuro Client Main Menu"
-            width={620}
-            height={1}
-            quality={100}
-          ></Image>
-          <div className="flex items-center justify-between">
-            <h1 className="font-medium mt-2">Bedwars Upgrades Display</h1>
-            <Link
-              target="_blank"
-              href={"https://github.com/ztztmc/BedwarsUpgradesDisplay"}
-              className="cursor-pointer text-[15px] bg-neutral-800 px-2 rounded-full transition-colors hover:bg-neutral-700 ml-2 mt-2"
-            >
-              Github
-              <ArrowUpRight className="inline ml-1 mb-0.5 -mr-1" size={16} />
-            </Link>
-          </div>
-          <p className="text-neutral-400 text-sm -mt-0.5">
-            Displays team upgrades & traps purchased in bedwars on the HUD
+        <Image
+          src="/projects/remp3.png"
+          alt="remp3 project preview image"
+          width={660}
+          height={330}
+          className="rounded-t-2xl"
+        />
+      </section>
+      <section
+        className="cursor-none bg-neutral-900 rounded-3xl px-6 mb-8"
+        data-cursor-link="bedwar.xyz"
+        data-cursor-url="https://bedwar.xyz"
+      >
+        <div className="flex justify-between py-4">
+          <p className="font-medium w-100">Bedwar</p>
+          <p className="text-[#999999] text-[15px] leading-5 w-260">
+            Hypixel Bedwars hub with stats viewing, latest map rotations,
+            sessions & more.
           </p>
-          <div className="flex mt-1">
-            <Link
-              target="_blank"
-              href={"https://java.com/"}
-              className="cursor-pointer text-[15px] bg-neutral-800 px-2 rounded-full transition-colors hover:bg-neutral-700"
-            >
-              Java
-            </Link>
-            <Link
-              target="_blank"
-              href={"https://legacyfabric.net/"}
-              className="cursor-pointer text-[15px] bg-neutral-800 px-2 rounded-full transition-colors hover:bg-neutral-700 ml-1.5"
-            >
-              Forge
-            </Link>
-          </div>
         </div>
+        <Image
+          src="/projects/bedwar.png"
+          alt="Bedwar project preview image"
+          width={660}
+          height={330}
+          className="rounded-t-2xl"
+        />
+      </section>
+      <section
+        className="cursor-none bg-neutral-900 rounded-3xl px-6 mb-8"
+        data-cursor-link="guess.bedwar.xyz"
+        data-cursor-url="https://guess.bedwar.xyz"
+      >
+        <div className="flex justify-between py-4">
+          <p className="font-medium w-100">Guesswars</p>
+          <p className="text-[#999999] text-[15px] leading-5 w-260">
+            Guess where you are in Hypixel Bedwars by looking at a single image
+            at a random location in a random map.
+          </p>
+        </div>
+        <Image
+          src="/projects/guesswars.png"
+          alt="Guesswars project preview image"
+          width={660}
+          height={330}
+          className="rounded-t-2xl"
+        />
+      </section>
+      <section
+        className="cursor-none bg-neutral-900 rounded-3xl px-6 mb-8"
+        data-cursor-link="minestats.xyz"
+        data-cursor-url="https://minestats.xyz"
+      >
+        <div className="flex justify-between py-4">
+          <p className="font-medium w-100">Minestats</p>
+          <p className="text-[#999999] text-[15px] leading-5 w-260">
+            View minemen.club player stats, historical player stats and
+            leaderboards through the website or disord bot.
+          </p>
+        </div>
+        <Image
+          src="/projects/minestats.png"
+          alt="Minestats project preview image"
+          width={660}
+          height={330}
+          className="rounded-t-2xl"
+        />
+      </section>
 
-        <div className={notoSansMono.className}>
-          <p className="text-neutral-400 text-sm mt-6">FIND / CONTACT ME</p>
-        </div>
-        <div>
-          <div className="flex items-center mt-2 gap-1.5">
-            <Image
-              className="mt-2"
-              src="/assets/discord.png"
-              alt="discord icon"
-              width={22}
-              height={1}
-            ></Image>
-            <div className={notoSansMono.className}>
-              <p className="text-neutral-200 mt-2">discord</p>
-            </div>
-            <p className="text-neutral-400 mt-[9px]">ztzt</p>
-          </div>
-          <Link
-            target="_blank"
-            href={"https://github.com/ztztmc"}
-            className="flex items-center gap-1.5 w-fit"
-          >
-            <Image
-              className="mt-2 rounded-full"
-              src="/assets/github.png"
-              alt="github icon"
-              width={21}
-              height={1}
-            ></Image>
-            <div className={notoSansMono.className}>
-              <p className="text-neutral-200 mt-2">github</p>
-            </div>
-            <p className="text-neutral-400 mt-[9px]">ztztmc</p>
-            <ArrowUpRight
-              className="text-neutral-200 inline -ml-0.5 mt-2.5"
-              size={16}
-            />
-          </Link>
-        </div>
+      <Cursor />
 
-        <footer className="text-neutral-400 mt-6 mb-4">© 2025 ztzt</footer>
-      </div>
+      <section className="bg-neutral-900 rounded-3xl px-6 py-4 mb-8">
+        <p className="text-[#999999]">
+          You can send me an email at{" "}
+          <span className="text-[#ccc6c2]">ztztalt@gmail.com</span> or if you
+          want a quicker response, message me on discord —{" "}
+          <span className="text-[#ccc6c2]">ztzt</span>
+        </p>
+      </section>
+
+      <footer className="text-[#999999] text-[16px] text-center">
+        Made with ♥ by ztzt
+      </footer>
     </main>
   );
 }

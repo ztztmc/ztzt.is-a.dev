@@ -7,13 +7,15 @@ const geist = Geist({
 
 export const metadata = {
   title: "ztzt",
-  description: "Personal website to showcase projects I have worked on.",
+  description: "Personal website to showcase my projects.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={geist.className}>
-      <body className={`antialiased bg-neutral-950`}>{children}</body>
+      <body className={`antialiased bg-[#0f0f0f] text-[#ccc6c2]`}>
+        {children}
+      </body>
     </html>
   );
 }
