@@ -45,8 +45,8 @@ export default function Home() {
 
       <section
         className="cursor-none bg-neutral-900 rounded-3xl px-6 mb-8"
-        data-cursor-link="remp3.vercel.app"
-        data-cursor-url="https://remp3.vercel.app"
+        data-cursor-link="re-mp3.vercel.app"
+        data-cursor-url="https://re-mp3.vercel.app"
       >
         <div className="flex justify-between pt-4 pb-2">
           <p className="font-medium w-100">remp3</p>
