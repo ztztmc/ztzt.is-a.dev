@@ -45,27 +45,6 @@ export default function Home() {
 
       <section
         className="cursor-none bg-neutral-900 rounded-3xl px-6 mb-8"
-        data-cursor-link="re-mp3.vercel.app"
-        data-cursor-url="https://re-mp3.vercel.app"
-      >
-        <div className="flex justify-between pt-4 pb-2">
-          <p className="font-medium w-100">remp3</p>
-          <p className="text-[#999999] text-[15px] leading-5 w-260">
-            Web-based local music player. Add audio files, play them, create
-            playlists and manage your music. No files are uploaded to any
-            server, everything stays on your device.
-          </p>
-        </div>
-        <Image
-          src="/projects/remp3.png"
-          alt="remp3 project preview image"
-          width={660}
-          height={330}
-          className="rounded-t-2xl"
-        />
-      </section>
-      <section
-        className="cursor-none bg-neutral-900 rounded-3xl px-6 mb-8"
         data-cursor-link="bedwar.xyz"
         data-cursor-url="https://bedwar.xyz"
       >
@@ -119,6 +98,27 @@ export default function Home() {
         <Image
           src="/projects/minestats.png"
           alt="Minestats project preview image"
+          width={660}
+          height={330}
+          className="rounded-t-2xl"
+        />
+      </section>
+      <section
+        className="cursor-none bg-neutral-900 rounded-3xl px-6 mb-8"
+        data-cursor-link="re-mp3.vercel.app"
+        data-cursor-url="https://re-mp3.vercel.app"
+      >
+        <div className="flex justify-between pt-4 pb-2">
+          <p className="font-medium w-100">remp3</p>
+          <p className="text-[#999999] text-[15px] leading-5 w-260">
+            Web-based local music player. Add audio files, play them, create
+            playlists and manage your music. No files are uploaded to any
+            server, everything stays on your device.
+          </p>
+        </div>
+        <Image
+          src="/projects/remp3.png"
+          alt="remp3 project preview image"
           width={660}
           height={330}
           className="rounded-t-2xl"

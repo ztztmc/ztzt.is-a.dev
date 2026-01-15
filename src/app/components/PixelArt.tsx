@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 const CELL_SIZE = 24;
-const LINE_COLOR = "rgba(255,255,255,0.01)";
+const LINE_COLOR = "rgba(255,255,255,0.009)";
 const DEFAULT_FILL = "#1c1c1c";
 
 export default function PixelArt() {
